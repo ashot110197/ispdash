@@ -1,0 +1,31 @@
+{
+  "name": "express",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "uglifycss": "./node_modules/.bin/uglifycss public/assets/css/custom.css > public/assets/css/custom.min.css",
+    "prestart": "./node_modules/.bin/uglifyjs public/js/*js -o public/bundled/bundled.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "dependencies": {
+    "express": "~4.10.2",
+    "body-parser": "~1.0.1",
+    "node-fetch": "~1.7.1",
+    "xml2js": "~0.4.17",
+    "mongodb": "~2.2.14",
+    "uglify-js": "~3.0.24",
+    "compression": "^1.7.0"
+  },
+  "homepage": "",
+  "devDependencies": {}
+}
