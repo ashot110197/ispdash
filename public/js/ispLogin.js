@@ -14,9 +14,9 @@ function requestISPLogin() {
             password: password
         },
         headers: {
-            Authorization: 'Basic XXXXXXXXXXX'
+            Authorization: 'Basic ' + btoa('clientId:clientSecret')
         },
-        dataType: 'form-data',
+        dataType: 'json',
         success: function (data) {
             console.info(data);
             alert(data);
